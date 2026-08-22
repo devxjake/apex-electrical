@@ -1,0 +1,120 @@
+header {
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0);
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem;
+  width: 91.4666666667%;
+  margin: 1rem auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-playfair), serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+  letter-spacing: -0.35px;
+}
+
+.logo-icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.625rem;
+  line-height: 0.9375rem;
+  border-radius: 6px;
+  border: 1px solid rgba(22, 51, 49, 0.2);
+  margin-right: 0.5rem;
+}
+
+.nav_ul li {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav_ul li:hover {
+  color: var(--color-accent);
+}
+
+/* MOBILE NAV */
+
+.mobile-bar_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* position: relative; */
+}
+
+.menu-btn {
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-btn_open {
+  background-image: url(./../../../public/assets/icons/open.png);
+}
+
+.menu-btn_close {
+  background-image: url(./../../../public/assets/icons/close.png);
+}
+
+/* .mobile-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 1rem;
+  z-index: 10;
+  background: #f9f7f2;
+} */
+
+.mobile-nav_ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+  padding: 4rem 0 14.875rem;
+}
+
+.mobile-nav_ul li {
+  color: var(--color-primary);
+  font-family: var(--font-playfair), serif;
+  font-size: 2.25rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.mobile-nav_footer {
+  border-top: 1px solid rgba(209, 213, 201, 0.2);
+  padding: 2.5rem 0 1rem;
+}
+
+.mobile-nav_footer strong {
+  display: block;
+  color: var(--color-accent);
+  font-size: 0.625rem;
+  font-weight: 700;
+  line-height: 0.9375rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.mobile-nav_footer a {
+  color: var(--color-primary);
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  transition: all 0.3s ease-in-out;
+}
